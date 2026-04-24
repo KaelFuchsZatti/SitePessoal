@@ -1,7 +1,7 @@
 body {
-    background-color: #0f172a;
+    background-color: #0f0a1a;
     color: #f1f5f9;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Fira Code', monospace;
     margin: 10px;
     padding: 5px;
 }
@@ -54,7 +54,7 @@ nav ul {
     display: flex;
     gap: 15px;
     list-style: none;
-    padding: 40px 60px;
+    padding: 35px 45px;
 }
 
 nav a {
@@ -65,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #a855f7;
 }
 
 section {
@@ -93,26 +93,27 @@ section {
 }
 
 .habilidades li:hover {
-    transform: scale(1.1); /* aumenta tamanho */
+    transform: scale(1.1);
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
 .habilidades i {
     font-size: 20px;
+    color: #a855f7;
 }
 
 .projetos ul {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* centraliza a linha */
+    justify-content: center;
 }
 
 .card-projeto {
     width: calc(33.33% - 14px);
     background-color: #1e293b;
     border-radius: 12px;
-    overflow: hidden; /* corta a imagem certinho */
+    overflow: hidden;
 
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -130,8 +131,12 @@ section {
 .card-projeto a {
     display: inline-block;
     margin-top: 10px;
-    color: #38bdf8;
+    color: #a855f7;
     text-decoration: none;
+}
+
+.card-projeto a:hover {
+    color: #c084fc;
 }
 
 .card-projeto:hover {
@@ -153,7 +158,7 @@ section {
 }
 
 h2 {
-    color: #38bdf8;
+    color: #a855f7;
     margin-bottom: 15px;
 }
 
@@ -172,12 +177,16 @@ h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #38bdf8;
+    background-color: #a855f7;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
     display: none;
+}
+
+.topo:hover {
+    background-color: #c084fc;
 }
 
 @media (max-width: 768px) {
